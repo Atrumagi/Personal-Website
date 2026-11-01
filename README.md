@@ -4,12 +4,13 @@ This repository contains the redesigned personal portfolio website built using s
 
 ## 🚀 Features
 - **Semantic HTML5 Structure:** Built using `<header>`, `<nav>`, `<main>`, `<section>`, and `<footer>` for maximum accessibility and visual hierarchy.
-- **Modern Responsive Design:** Features a dark linear-gradient background, sticky navigation bar, styled interactive tables, and fluid typography (`clamp()`).
+- **Responsive Editorial Design:** Features a warm paper palette, portrait-led introduction, sticky navigation, and layouts that adapt to mobile screens.
 - **Clean Project Structure:** Modular file organization with an external stylesheet (`style.css`) and local media assets (`Khalid.jpeg`).
 
 ## 🛠️ Built With
 - **HTML5** - Page structure and semantic layout
-- **CSS3** - Custom styling, visual styling, linear gradients, and responsive table formatting
+- **CSS3** - Custom styling, fluid typography, accessible focus states, and responsive layouts
+- **JavaScript** - Small progressive enhancements for section-aware navigation and the current year
 - **Git & GitHub** - Branch management (`feature/redesign` -> `main`) and version control
 
 ## 📱 Responsive Testing
