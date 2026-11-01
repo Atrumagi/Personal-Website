@@ -61,7 +61,7 @@ nav a:hover {
     box-shadow: 0 0 0 1px rgba(125, 211, 252, 0.2);
 }
 
-/* Page Layout & Sections*/
+/* Page Layout & Sections */
 section {
     padding: 50px 28px;
     max-width: 980px;
@@ -92,14 +92,13 @@ h2 {
     margin-bottom: 14px;
 }
 
-p, address {
+p {
     margin-top: 0;
     color: #dfe7f5;
     font-size: 1.05rem;
-    font-style: normal;
 }
 
-/* Media Stylw */
+/* Media Styling */
 img {
     max-width: 100%;
     height: auto;
@@ -109,7 +108,12 @@ img {
     box-shadow: 0 18px 40px rgba(15, 23, 42, 0.45);
 }
 
-/* Table Style */
+video {
+    margin-top: 15px;
+    border-radius: 16px;
+}
+
+/* Table Styling */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -157,47 +161,4 @@ a {
 
 a:hover {
     color: #a5f3fc;
-}
-
-/* 
-   RESPONSIVE DESIGN*/
-
-/* Tablet View */
-@media screen and (max-width: 900px) {
-    section {
-        margin: 20px 16px;
-        padding: 32px 20px;
-    }
-}
-
-/* Mobile View */
-@media screen and (max-width: 600px) {
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-        padding: 12px 0;
-    }
-
-    nav li {
-        margin: 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    nav a {
-        display: block;
-        padding: 8px 14px;
-    }
-
-    section {
-        padding: 24px 16px;
-        border-radius: 16px;
-    }
-
-    th, td {
-        padding: 10px 10px;
-        font-size: 0.9rem;
-    }
 }
