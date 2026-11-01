@@ -18,9 +18,9 @@ The layout was systematically tested across three distinct viewports:
 
 | Device Viewport | Width | Preview |
 | :--- | :--- | :--- |
-| **Mobile** | 375px | ![Mobile View](mobile-preview.JPEG) |
-| **Tablet** | 768px | ![Tablet View](tablet-preview.JPEG) |
-| **Desktop** | 1200px | ![Desktop View](desktop-preview.JPEG) |
+| **Mobile** | 500px | ![Mobile View](Images/mobile-preview.jpeg) |
+| **Tablet** | 768px | ![Tablet View](Images/tablet-preview.jpeg) |
+| **Desktop** | 1200px | ![Desktop View](Images/desktop-preview.jpeg) |
 
 ## 📝 Written Reflection
 During this redesign, my primary objective was to improve both visual aesthetics and semantic code structure. Transitioning from inline styles to a centralized external stylesheet streamlined the development process significantly.
