@@ -6,7 +6,6 @@
     <meta name="theme-color" content="#191a17">
     <title>Khalid Noel — Personal Website</title>
     <link rel="stylesheet" href="CSS/style.css">
-    <script src="JS/script.js" defer></script>
 </head>
 <body>
     <header class="site-header">
@@ -16,6 +15,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><button type="button" id="theme-toggle">Dark Mode</button></li>
             </ul>
         </nav>
     </header>
@@ -33,10 +33,15 @@
             </figure>
         </section>
 
-        <section class="about-section" id="about" aria-labelledby="about-title">
-            <p class="section-label">A little about me</p>
-            <h2 id="about-title">Learning by building.</h2>
-            <p>I am passionate about learning software development and building web applications. Every project teaches me something new.</p>
+        <section class="content-section" id="about" aria-labelledby="about-title">
+            <div class="section-heading">
+                <h2 id="about-title">About Me</h2>
+            </div>
+            <p>I am passionate about learning software development, databases, and building full-stack web applications.</p>
+            <p id="extra-bio" style="display: none;">
+                Outside of coursework, I enjoy working with Git version control, designing database schemas, and troubleshooting deployment workflows.
+            </p>
+            <button type="button" class="button" id="toggle-bio-btn">Read More</button>
         </section>
 
         <section class="content-section" id="portfolio" aria-labelledby="portfolio-title">
@@ -55,7 +60,7 @@
                                 <th scope="col">Experience</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="skills-body">
                             <tr>
                                 <td>HTML5</td>
                                 <td>Beginner</td>
@@ -73,6 +78,13 @@
                             </tr>
                         </tbody>
                     </table>
+
+                    <div class="add-skill-controls" style="margin-top: 1rem;">
+                        <input type="text" id="new-skill" placeholder="Technology (e.g. JavaScript)">
+                        <input type="text" id="new-level" placeholder="Proficiency (e.g. Beginner)">
+                        <input type="text" id="new-exp" placeholder="Experience (e.g. 1 month)">
+                        <button type="button" class="button" id="add-skill-btn">Add Skill</button>
+                    </div>
                 </div>
                 <div>
                     <h3>Projects</h3>
@@ -103,19 +115,24 @@
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <textarea id="message" name="message" rows="5" maxlength="200" required></textarea>
+                    <p id="char-count" class="form-note">200 characters remaining</p>
                 </div>
-                <button class="button" type="submit">Open email</button>
-                <p class="form-note">This opens your email app with the message ready to send.</p>
+                <button class="button" type="submit">Send message</button>
             </form>
+            <div id="form-output"></div>
         </section>
     </main>
 
     <footer class="site-footer">
+        <p id="live-clock"></p>
         <p>&copy; <span id="current-year">2026</span> Khalid Noel. Made while learning.</p>
     </footer>
-<button id="backToTop" title="Back to Top" aria-label="Back to top">
-    &#8593;
-</button>
+
+    <button id="backToTop" title="Back to Top" aria-label="Back to top">
+        &#8593;
+    </button>
+
+    <script src="JS/script.js" defer></script>
 </body>
 </html>
